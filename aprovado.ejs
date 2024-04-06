@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluno Aprovado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #1eff00;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      text-align: left;
+    }
+    th {
+      color: #09ff00;
+    }
+    td {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Aluno Aprovado!</h1>
+    <table>
+      <tr>
+        <th>Nome do Aluno</th>
+        <td><%= aluno %></td>
+      </tr>
+      <tr>
+        <th>Nota 1</th>
+        <td><%= notas[0] %></td>
+      </tr>
+      <tr>
+        <th>Nota 2</th>
+        <td><%= notas[1] %></td>
+      </tr>
+      <tr>
+        <th>Matéria</th>
+        <td><%= materia %></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
